@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Гос знакомства — Мой профиль</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page page--myprofile">
+        <header class="header header--main">
+            <div class="logo-wrap">
+                <div class="logo-heart" aria-hidden="true"></div>
+                <div class="logo-text" aria-label="Гос знакомства">
+                    <span>гос</span>
+                    <span>знакомства</span>
+                </div>
+            </div>
+
+            <nav class="top-nav">
+                <a href="search.html" class="top-nav-link">Подбор анкет</a>
+                <a href="chats.html" class="top-nav-link ">Диалоги</a>
+                <a href="my-profile.html" class="top-nav-link  is-active">Мой профиль</a>
+                <a href="meeting-place.html" class="top-nav-link ">Место встречи</a>
+                <a href="safety.html" class="top-nav-link">Безопасность</a>
+            </nav>
+
+
+            <div class="user-mini">
+                <div class="user-mini-info">
+                    <span class="user-mini-name">Алексей</span>
+                    <span class="user-mini-city">Москва · 29</span>
+                </div>
+                <div class="user-mini-avatar">
+                    <span>A</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="myprofile-main">
+            <section class="myprofile-layout" aria-label="Мой профиль">
+                <!-- Левая колонка: резюме профиля -->
+                <aside class="myprofile-summary">
+                    <div class="myprofile-summary-avatar">
+                        <div class="myprofile-avatar-circle">
+                            <!-- сюда можно поставить <img src="..." alt="Аватар" /> -->
+                            <span>A</span>
+                        </div>
+                        <button class="ghost-btn ghost-btn--full" type="button"
+                            onclick="window.location.href='interests.html'">
+                            Изменить фото и интересы
+                        </button>
+                    </div>
+
+                    <div class="myprofile-summary-main">
+                        <h1>Алексей, 29</h1>
+                        <p class="profile-location">
+                            Москва · показываем в радиусе 15 км
+                        </p>
+
+                        <div class="myprofile-verify">
+                            <span class="badge-dot"></span>
+                            Профиль подтверждён через Госуслуги
+                        </div>
+
+                        <div class="myprofile-stats">
+                            <div class="myprofile-stat">
+                                <span class="myprofile-stat-value">38</span>
+                                <span class="myprofile-stat-label">Лайков за неделю</span>
+                            </div>
+                            <div class="myprofile-stat">
+                                <span class="myprofile-stat-value">12</span>
+                                <span class="myprofile-stat-label">Совпадений</span>
+                            </div>
+                            <div class="myprofile-stat">
+                                <span class="myprofile-stat-value">104</span>
+                                <span class="myprofile-stat-label">Просмотров анкеты</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myprofile-summary-footer">
+                        <button class="primary-btn primary-btn--full" type="button"
+                            onclick="window.location.href='m-profile.html'">
+                            Просмотреть мой профиль как другие
+                        </button>
+                        <button class="ghost-btn ghost-btn--full" type="button"
+                            onclick="window.location.href='settings.html'">
+                            Настройки аккаунта
+                        </button>
+                        <button class="ghost-btn ghost-btn--full" type="button"
+                            onclick="window.location.href='search.html'">
+                            Перейти к подбору анкет
+                        </button>
+                    </div>
+                </aside>
+
+                <!-- Правая колонка: детали и редактирование -->
+                <section class="myprofile-details">
+                    <!-- Основное -->
+                    <div class="profile-section">
+                        <div class="myprofile-section-header">
+                            <h2>Основная информация</h2>
+                            <a class="ghost-link myprofile-edit-btn" href="interests.html">Изменить город и
+                                предпочтения</a>
+                        </div>
+
+                        <p class="profile-text profile-text--sm">
+                            Имя, возраст и базовые данные подтверждены через ваш аккаунт Госуслуг и не редактируются в
+                            сервисе.
+                            Вы можете настраивать только видимость и параметры знакомства.
+                        </p>
+
+                        <div class="myprofile-fields">
+                            <div class="myprofile-field">
+                                <span class="myprofile-field-label">Имя</span>
+                                <span class="myprofile-field-value">Алексей · подтверждено</span>
+                            </div>
+                            <div class="myprofile-field">
+                                <span class="myprofile-field-label">Возраст</span>
+                                <span class="myprofile-field-value">29 · рассчитано по дате рождения</span>
+                            </div>
+                            <div class="myprofile-field">
+                                <span class="myprofile-field-label">Город показа</span>
+                                <span class="myprofile-field-value">Москва · радиус 15 км</span>
+                            </div>
+                            <div class="myprofile-field">
+                                <span class="myprofile-field-label">Кого ищу</span>
+                                <span class="myprofile-field-value">Серьёзные отношения, общение</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- О себе -->
+                    <div class="profile-section">
+                        <div class="myprofile-section-header">
+                            <h2>О себе</h2>
+                            <a class="ghost-link myprofile-edit-btn" href="interests.html">Редактировать</a>
+                        </div>
+                        <p class="profile-text">
+                            Работаю в IT, люблю настольные игры, прогулки и хорошее кофе. Ищу человека,
+                            с которым можно будет и молчать, и обсуждать всё на свете — от мемов до больших планов.
+                        </p>
+                    </div>
+
+                    <!-- Интересы -->
+                    <div class="profile-section">
+                        <div class="myprofile-section-header">
+                            <h2>Интересы</h2>
+                            <a class="ghost-link myprofile-edit-btn" href="interests.html">Изменить интересы</a>
+                        </div>
+
+                        <div class="profile-tags">
+                            <span>#it</span>
+                            <span>#настолки</span>
+                            <span>#спорт</span>
+                            <span>#кино</span>
+                            <span>#путешествия</span>
+                            <span>#кофе</span>
+                        </div>
+
+                        <p class="profile-text profile-text--sm myprofile-tags-note">
+                            Интересы помогают показывать вас людям, с которыми у вас больше общих тем.
+                            Вы можете обновить их в любой момент.
+                        </p>
+                    </div>
+
+                    <!-- Видимость и безопасность -->
+                    <div class="profile-section profile-section--grid myprofile-privacy">
+                        <div>
+                            <h2>Видимость профиля</h2>
+
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Показывать меня в подборе анкет</span>
+                            </label>
+
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Показывать статус «Онлайн»</span>
+                            </label>
+
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">Показывать расстояние до пользователя</span>
+                            </label>
+
+                            <p class="profile-text profile-text--sm">
+                                Эти настройки влияют только на отображение вашего профиля.
+                                Базовые данные аккаунта, подтверждённые через Госуслуги, не меняются.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2>Безопасность</h2>
+                            <p class="profile-text profile-text--sm">
+                                Ваш номер телефона и другие данные из Госуслуг никогда не показываются другим
+                                пользователям.
+                                Вы можете управлять устройствами и сессиями, а также ограничениями профиля в настройках
+                                аккаунта.
+                            </p>
+                            <button class="ghost-btn ghost-btn--full" type="button"
+                                onclick="window.location.href='settings.html'">
+                                Открыть настройки безопасности
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Нижняя панель -->
+                    <div class="myprofile-bottom">
+                        <a class="ghost-link myprofile-delete" href="settings.html#danger">
+                            Удалить профиль…
+                        </a>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="footer footer--main">
+            <span>© 2025 Гос знакомства</span>
+            <span>
+                <a href="safety.html">Безопасность общения</a> ·
+                <a href="settings.html">Настройки конфиденциальности</a> ·
+                <a href="login.html">Выход</a>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>

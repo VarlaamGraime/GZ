@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Гос знакомства — Совпадение!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page page--match">
+    <header class="header header--main">
+      <div class="logo-wrap">
+        <!-- если используешь svg-логотип, можно заменить на <img src="Group 4.svg" class="logo-img"> -->
+        <div class="logo-heart" aria-hidden="true"></div>
+        <div class="logo-text" aria-label="Гос знакомства">
+          <span>гос</span>
+          <span>знакомства</span>
+        </div>
+      </div>
+
+      <div class="header-helper">
+        Новое совпадение · Вы понравились друг другу
+      </div>
+
+      <div class="user-mini">
+        <div class="user-mini-info">
+          <span class="user-mini-name">Алексей</span>
+          <span class="user-mini-city">Москва · 29</span>
+        </div>
+        <div class="user-mini-avatar">
+          <span>A</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="match-main">
+      <section class="match-card" aria-label="Совпадение">
+        <div class="match-badge">
+          ✨ У вас совпадение!
+        </div>
+
+        <h1 class="match-title">
+          Вы понравились друг другу
+        </h1>
+
+        <p class="match-subtitle">
+          Теперь вы можете начать общение или продолжить листать анкеты.
+        </p>
+
+        <div class="match-avatars">
+          <div class="match-avatar match-avatar--me">
+            <span>A</span>
+          </div>
+          <div class="match-avatar match-avatar--peer">
+            <span>О</span>
+          </div>
+        </div>
+
+        <p class="match-names">
+          <span>Алексей</span> и <span>Ольга</span
+          > теперь могут написать друг другу.
+        </p>
+
+        <div class="match-actions">
+          <button
+            class="ghost-btn ghost-btn--full match-action-secondary"
+            type="button"
+            onclick="window.location.href='search.html'">
+            Продолжить просмотр анкет
+          </button>
+
+          <button
+            class="primary-btn primary-btn--full match-action-primary"
+            type="button"
+            onclick="window.location.href='chat.html'">
+            Написать сообщение
+          </button>
+        </div>
+
+        <p class="match-note">
+          Советы по безопасному общению: не отправляйте документы, пароли и
+          данные банковских карт, встречайтесь только в общественных местах.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer footer--main">
+      <span>© 2025 Гос знакомства</span>
+      <span>
+        <a href="#">Помощь</a> ·
+        <a href="#">Безопасность</a> ·
+        <a href="#">Выход</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>

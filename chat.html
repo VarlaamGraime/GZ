@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Гос знакомства — Чат</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page page--chat">
+        <header class="header header--main">
+            <div class="logo-wrap">
+                <div class="logo-heart" aria-hidden="true"></div>
+                <div class="logo-text" aria-label="Гос знакомства">
+                    <span>гос</span>
+                    <span>знакомства</span>
+                </div>
+            </div>
+
+            <nav class="top-nav">
+                <a href="search.html" class="top-nav-link">Подбор анкет</a>
+                <a href="chats.html" class="top-nav-link  is-active">Диалоги</a>
+                <a href="my-profile.html" class="top-nav-link">Мой профиль</a>
+                <a href="meeting-place.html" class="top-nav-link ">Место встречи</a>
+                <a href="safety.html" class="top-nav-link">Безопасность</a>
+            </nav>
+
+            <div class="user-mini">
+                <div class="user-mini-info">
+                    <span class="user-mini-name">Алексей</span>
+                    <span class="user-mini-city">Москва · 29</span>
+                </div>
+                <div class="user-mini-avatar">
+                    <span>A</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-main">
+            <!-- Верхняя панель чата -->
+            <section class="chat-header" aria-label="Информация о собеседнике">
+                <button class="ghost-link chat-back" type="button" onclick="window.location.href='chats.html'">
+                    ← К диалогам
+                </button>
+
+                <div class="chat-peer">
+                    <div class="chat-peer-avatar">
+                        <span>О</span>
+                        <span class="chat-status chat-status--online"></span>
+                    </div>
+                    <div class="chat-peer-info">
+                        <div class="chat-peer-name-row">
+                            <span class="chat-peer-name">Ольга, 27</span>
+                            <span class="chat-peer-tag">Совпадение</span>
+                        </div>
+                        <span class="chat-peer-status">Онлайн · в 3 км от вас</span>
+                    </div>
+                </div>
+
+                <div class="chat-header-actions">
+                    <button class="ghost-btn ghost-btn--icon-only" type="button" title="Открыть профиль"
+                        onclick="window.location.href='profile.html'">
+                        👤
+                    </button>
+                    <button class="ghost-btn ghost-btn--icon-only" type="button" title="Пожаловаться"
+                        onclick="window.location.href='report.html'">
+                        ⚠
+                    </button>
+                </div>
+            </section>
+
+            <!-- Область сообщений -->
+            <section class="chat-window" aria-label="Сообщения">
+                <div class="chat-day-separator">
+                    <span>Сегодня</span>
+                </div>
+
+                <!-- Сообщение собеседника -->
+                <div class="chat-message-row">
+                    <div class="chat-bubble chat-bubble--peer">
+                        <p>Привет! Рада знакомству 🙂 Люблю прогулки по набережной и кофе, ты как относишься к таким
+                            планам?</p>
+                        <span class="chat-time-small">19:52</span>
+                    </div>
+                </div>
+
+                <!-- Ваше сообщение -->
+                <div class="chat-message-row chat-message-row--me">
+                    <div class="chat-bubble chat-bubble--me">
+                        <p>Привет! Звучит отлично, я тоже обожаю воду и хороший кофе.</p>
+                        <span class="chat-time-small">19:54</span>
+                    </div>
+                </div>
+
+                <!-- Сообщение собеседника -->
+                <div class="chat-message-row">
+                    <div class="chat-bubble chat-bubble--peer">
+                        <p>Можем встретиться в выходные, если будешь свободен.</p>
+                        <span class="chat-time-small">20:01</span>
+                    </div>
+                </div>
+
+                <!-- Ваше сообщение (длинное) -->
+                <div class="chat-message-row chat-message-row--me">
+                    <div class="chat-bubble chat-bubble--me">
+                        <p>В субботу буду в центре, можем встретиться ближе к вечеру, часов в 6–7.
+                            Могу предложить пару мест, где тихо и вкусный кофе.</p>
+                        <span class="chat-time-small">20:05 · Отправлено</span>
+                    </div>
+                </div>
+
+                <div class="chat-typing">
+                    <span class="chat-typing-dot"></span>
+                    <span class="chat-typing-dot"></span>
+                    <span class="chat-typing-dot"></span>
+                    <span class="chat-typing-text">Ольга печатает…</span>
+                </div>
+            </section>
+
+            <!-- Поле ввода -->
+            <section class="chat-input-area" aria-label="Написать сообщение">
+                <button class="ghost-btn ghost-btn--icon-only chat-input-icon" type="button" title="Отправить эмоджи">
+                    😊
+                </button>
+
+                <div class="chat-input-wrap">
+                    <textarea class="chat-input" rows="1" placeholder="Напишите сообщение…"></textarea>
+                </div>
+
+                <button class="primary-btn chat-send-btn" type="button">
+                    Отправить
+                </button>
+            </section>
+        </main>
+
+        <footer class="footer footer--main">
+            <span>© 2025 Гос знакомства</span>
+            <span>
+                <a href="#">Помощь</a> ·
+                <a href="#">Настройки конфиденциальности</a> ·
+                <a href="#">Выход</a>
+            </span>
+        </footer>
+    </div>
+
+    <script>
+        // Простой автоскролл к последнему сообщению
+        (function () {
+            const win = document.querySelector('.chat-window');
+            if (win) {
+                win.scrollTop = win.scrollHeight;
+            }
+        })();
+    </script>
+</body>
+
+</html>

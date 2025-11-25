@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Гос знакомства — Профиль пользователя</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page page--profile">
+        <header class="header header--main">
+            <div class="logo-wrap">
+                <!-- если используешь svg-логотип, можешь заменить на <img src="Group 4.svg" class="logo-img"> -->
+                <div class="logo-heart" aria-hidden="true"></div>
+                <div class="logo-text" aria-label="Гос знакомства">
+                    <span>гос</span>
+                    <span>знакомства</span>
+                </div>
+            </div>
+
+            <div class="header-helper">
+                <a href="search.html" class="ghost-link">← Назад к анкетам</a>
+            </div>
+
+            <div class="user-mini">
+                <div class="user-mini-info">
+                    <span class="user-mini-name">Алексей</span>
+                    <span class="user-mini-city">Москва · 29</span>
+                </div>
+                <div class="user-mini-avatar">
+                    <span>A</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="profile-main">
+            <section class="profile-layout" aria-label="Профиль пользователя">
+                <!-- Левая часть: фото -->
+                <div class="profile-photos">
+                    <div class="profile-photo-main">
+                        <!-- можно заменить на <img src="..." alt="Ольга" /> -->
+                    </div>
+
+                    <div class="profile-photo-thumbs">
+                        <button class="profile-thumb is-active" type="button">
+                            <span>1</span>
+                        </button>
+                        <button class="profile-thumb" type="button">
+                            <span>2</span>
+                        </button>
+                        <button class="profile-thumb" type="button">
+                            <span>3</span>
+                        </button>
+                    </div>
+
+                    <p class="profile-photo-note">
+                        Фотографии видны только пользователям, которые соответствуют вашим настройкам приватности.
+                    </p>
+                </div>
+
+                <!-- Правая часть: информация -->
+                <div class="profile-info">
+                    <header class="profile-info-header">
+                        <div>
+                            <h1>Ольга, 27</h1>
+                            <p class="profile-location">
+                                Санкт-Петербург · 3 км от вас · <span class="profile-status-dot">Онлайн</span>
+                            </p>
+                        </div>
+                        <div class="profile-header-actions">
+                            <button class="ghost-btn ghost-btn--icon-only" type="button" title="Пожаловаться"
+                                onclick="window.location.href='report.html'">
+                                ⚠
+                            </button>
+                        </div>
+                    </header>
+
+                    <div class="profile-section">
+                        <h2>О себе</h2>
+                        <p class="profile-text">
+                            Люблю прогулки у воды, кофе и долгие разговоры. Работаю в сфере образования,
+                            в свободное время читаю, смотрю кино и встречаюсь с друзьями. Ищу человека,
+                            с которым будет спокойно и по-настоящему интересно.
+                        </p>
+                    </div>
+
+                    <div class="profile-section">
+                        <h2>Интересы</h2>
+                        <div class="profile-tags">
+                            <span>#путешествия</span>
+                            <span>#книги</span>
+                            <span>#кофе</span>
+                            <span>#искусство</span>
+                            <span>#долгие_прогулки</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-section profile-section--grid">
+                        <div>
+                            <h3>Формат общения</h3>
+                            <p class="profile-text profile-text--sm">
+                                Долгосрочные отношения, открытый и честный диалог.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Кого ищет</h3>
+                            <p class="profile-text profile-text--sm">
+                                Партнёра для серьёзных отношений, близкого по ценностям и чувству юмора.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="profile-section profile-section--grid">
+                        <div>
+                            <h3>Город</h3>
+                            <p class="profile-text profile-text--sm">
+                                Санкт-Петербург, возможны переезды и поездки.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Безопасность</h3>
+                            <p class="profile-text profile-text--sm">
+                                Профиль прошёл базовую проверку, подтверждён номер телефона.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="profile-actions-bar">
+                        <button class="ghost-btn profile-action-skip" type="button">
+                            ✕ Пропустить
+                        </button>
+                        <button class="primary-btn profile-action-message" type="button">
+                            Написать
+                        </button>
+                        <button class="ghost-btn profile-action-like" type="button">
+                            ❤ Лайк
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer footer--main">
+            <span>© 2025 Гос знакомства</span>
+            <span>
+                <a href="#">Помощь</a> ·
+                <a href="#">Настройки конфиденциальности</a> ·
+                <a href="#">Выход</a>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>

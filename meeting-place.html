@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Гос знакомства — Место встречи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page page--meeting">
+        <header class="header header--main">
+            <div class="logo-wrap">
+                <div class="logo-heart" aria-hidden="true"></div>
+                <div class="logo-text" aria-label="Гос знакомства">
+                    <span>гос</span>
+                    <span>знакомства</span>
+                </div>
+            </div>
+
+            <nav class="top-nav">
+                <a href="search.html" class="top-nav-link">Подбор анкет</a>
+                <a href="chats.html" class="top-nav-link ">Диалоги</a>
+                <a href="my-profile.html" class="top-nav-link">Мой профиль</a>
+                <a href="meeting-place.html" class="top-nav-link is-active">Место встречи</a>
+                <a href="safety.html" class="top-nav-link">Безопасность</a>
+            </nav>
+
+            <div class="user-mini">
+                <div class="user-mini-info">
+                    <span class="user-mini-name">Алексей</span>
+                    <span class="user-mini-city">Москва · 29</span>
+                </div>
+                <div class="user-mini-avatar">
+                    <span>A</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="meeting-main">
+            <section class="meeting-layout" aria-label="Планирование встречи">
+                <!-- Левая часть: текст -->
+                <div class="meeting-info">
+                    <h1 class="meeting-title">Место встречи</h1>
+                    <p class="meeting-lead">
+                        Выберите дату и время, а мы подберём вам случайную встречу с человеком,
+                        который тоже готов выйти офлайн.
+                    </p>
+
+                    <ul class="meeting-points">
+                        <li>Встречи проходят только в общественных местах.</li>
+                        <li>Вы увидите профиль человека только после взаимного подтверждения.</li>
+                        <li>Вы всегда можете отменить встречу или изменить время.</li>
+                    </ul>
+
+                    <div class="meeting-tip">
+                        <strong>Совет:</strong> выбирайте время, когда вы точно сможете быть на связи —
+                        мы напомним о встрече заранее.
+                    </div>
+                </div>
+
+                <!-- Правая часть: карточка выбора -->
+                <div class="meeting-card">
+                    <!-- Календарь -->
+                    <section class="meeting-section">
+                        <div class="meeting-section-header">
+                            <h2>Дата встречи</h2>
+                            <span class="meeting-section-sub">Выберите удобный день</span>
+                        </div>
+
+                        <div class="meeting-calendar">
+                            <div class="meeting-cal-header">
+                                <button class="meeting-cal-nav" type="button" aria-label="Предыдущий месяц">
+                                    ‹
+                                </button>
+                                <div class="meeting-cal-month">
+                                    Сентябрь 2025
+                                </div>
+                                <button class="meeting-cal-nav meeting-cal-nav--next" type="button"
+                                    aria-label="Следующий месяц">
+                                    ›
+                                </button>
+                            </div>
+
+                            <div class="meeting-cal-grid">
+                                <div class="meeting-cal-dow">Пн</div>
+                                <div class="meeting-cal-dow">Вт</div>
+                                <div class="meeting-cal-dow">Ср</div>
+                                <div class="meeting-cal-dow">Чт</div>
+                                <div class="meeting-cal-dow">Пт</div>
+                                <div class="meeting-cal-dow">Сб</div>
+                                <div class="meeting-cal-dow">Вс</div>
+
+                                <!-- пустые клетки перед 1-м -->
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <button class="meeting-day" type="button">1</button>
+                                <button class="meeting-day" type="button">2</button>
+                                <button class="meeting-day" type="button">3</button>
+                                <button class="meeting-day" type="button">4</button>
+
+                                <button class="meeting-day" type="button">5</button>
+                                <button class="meeting-day" type="button">6</button>
+                                <button class="meeting-day" type="button">7</button>
+                                <button class="meeting-day" type="button">8</button>
+                                <button class="meeting-day meeting-day--today" type="button">9</button>
+                                <button class="meeting-day" type="button">10</button>
+                                <button class="meeting-day" type="button">11</button>
+
+                                <button class="meeting-day" type="button">12</button>
+                                <button class="meeting-day" type="button">13</button>
+                                <button class="meeting-day meeting-day--selected" type="button">14</button>
+                                <button class="meeting-day" type="button">15</button>
+                                <button class="meeting-day" type="button">16</button>
+                                <button class="meeting-day" type="button">17</button>
+                                <button class="meeting-day" type="button">18</button>
+
+                                <button class="meeting-day" type="button">19</button>
+                                <button class="meeting-day" type="button">20</button>
+                                <button class="meeting-day" type="button">21</button>
+                                <button class="meeting-day" type="button">22</button>
+                                <button class="meeting-day" type="button">23</button>
+                                <button class="meeting-day" type="button">24</button>
+                                <button class="meeting-day" type="button">25</button>
+
+                                <button class="meeting-day" type="button">26</button>
+                                <button class="meeting-day" type="button">27</button>
+                                <button class="meeting-day" type="button">28</button>
+                                <button class="meeting-day" type="button">29</button>
+                                <button class="meeting-day" type="button">30</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Время -->
+                    <section class="meeting-section">
+                        <div class="meeting-section-header">
+                            <h2>Время встречи</h2>
+                            <span class="meeting-section-sub">Выберите удобный интервал</span>
+                        </div>
+
+                        <div class="meeting-times">
+                            <button class="meeting-time-slot" type="button">17:00</button>
+                            <button class="meeting-time-slot" type="button">18:00</button>
+                            <button class="meeting-time-slot meeting-time-slot--selected" type="button">19:00</button>
+                            <button class="meeting-time-slot" type="button">20:00</button>
+                            <button class="meeting-time-slot" type="button">21:00</button>
+                        </div>
+                    </section>
+
+                    <!-- Итог и кнопка -->
+                    <section class="meeting-section meeting-section--footer">
+                        <div class="meeting-summary">
+                            <p class="meeting-summary-title">Вы выбрали:</p>
+                            <p class="meeting-summary-text">
+                                <strong>14 сентября, 19:00</strong><br>
+                                Мы подберём вам случайную встречу среди людей, которые также свободны в это время.
+                            </p>
+                        </div>
+
+                        <div class="meeting-actions">
+                            <button class="ghost-btn ghost-btn--full" type="button"
+                                onclick="window.location.href='search.html'">
+                                Вернуться к анкетам
+                            </button>
+
+                            <button class="primary-btn primary-btn--full meeting-submit" type="button">
+                                Найти случайную встречу
+                            </button>
+                        </div>
+
+                        <p class="meeting-note">
+                            Мы отправим вам уведомление, как только найдём подходящего человека.
+                            До подтверждения встречи вы можете изменить дату и время.
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer footer--main">
+            <span>© 2025 Гос знакомства</span>
+            <span>
+                <a href="safety.html">Безопасность общения</a> ·
+                <a href="#">Помощь</a> ·
+                <a href="settings.html">Настройки</a>
+            </span>
+        </footer>
+    </div>
+
+    <script>
+        // Простое выделение дня и времени (визуальное)
+        (function () {
+            const days = Array.from(document.querySelectorAll('.meeting-day'));
+            const times = Array.from(document.querySelectorAll('.meeting-time-slot'));
+            const summaryEl = document.querySelector('.meeting-summary-text');
+
+            days.forEach(day => {
+                day.addEventListener('click', () => {
+                    days.forEach(d => d.classList.remove('meeting-day--selected'));
+                    day.classList.add('meeting-day--selected');
+                    updateSummary();
+                });
+            });
+
+            times.forEach(slot => {
+                slot.addEventListener('click', () => {
+                    times.forEach(s => s.classList.remove('meeting-time-slot--selected'));
+                    slot.classList.add('meeting-time-slot--selected');
+                    updateSummary();
+                });
+            });
+
+            function updateSummary() {
+                const selectedDay = document.querySelector('.meeting-day--selected');
+                const selectedTime = document.querySelector('.meeting-time-slot--selected');
+
+                if (selectedDay && selectedTime && summaryEl) {
+                    summaryEl.innerHTML =
+                        '<strong>' + selectedDay.textContent.trim() +
+                        ' сентября, ' + selectedTime.textContent.trim() +
+                        '</strong><br>Мы подберём вам случайную встречу среди людей, которые также свободны в это время.';
+                }
+            }
+
+            updateSummary();
+        })();
+    </script>
+</body>
+
+</html>

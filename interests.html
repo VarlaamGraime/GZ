@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Гос знакомства — Настройка профиля</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="logo-wrap">
+                <!-- если используешь svg-логотип, оставь только img -->
+                <div class="logo-heart" aria-hidden="true"></div>
+                <div class="logo-text" aria-label="Гос знакомства">
+                    <span>гос</span>
+                    <span>знакомства</span>
+                </div>
+            </div>
+
+            <div class="header-helper">
+                Профиль почти готов · данные подтверждены через Госуслуги
+            </div>
+        </header>
+
+        <main class="hero hero--form">
+            <!-- Левая часть: форма -->
+            <section class="hero-text" aria-label="Настройка профиля и интересов">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Дополните профиль: интересы, фото и город
+                </div>
+
+                <h1 class="hero-title">
+                    <span>Расскажите о себе</span>
+                    <span>и о том, кого вы хотите встретить</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Основные данные уже подтверждены через ваш аккаунт Госуслуг.
+                    Здесь вы настраиваете то, что будут видеть другие пользователи:
+                    интересы, фото и город показа.
+                </p>
+
+                <form class="profile-form" method="get" action="my-profile.html">
+                    <!-- Интересы -->
+                    <div class="block">
+                        <div class="block-header">
+                            <h2>Ваши интересы</h2>
+                            <p>Выберите несколько вариантов — это поможет в подборе анкет.</p>
+                        </div>
+
+                        <div class="chips-grid">
+                            <label class="chip">
+                                <input type="checkbox" name="interests" value="sport">
+                                <span>Спорт</span>
+                            </label>
+                            <label class="chip">
+                                <input type="checkbox" name="interests" value="travel">
+                                <span>Путешествия</span>
+                            </label>
+                            <label class="chip">
+                                <input type="checkbox" name="interests" value="cinema">
+                                <span>Кино и сериалы</span>
+                            </label>
+                            <label class="chip">
+                                <input type="checkbox" name="interests" value="music">
+                                <span>Музыка</span>
+                            </label>
+                            <label class="chip">
+                                <input type="checkbox" name="interests" value="books">
+                                <span>Книги</span>
+                            </label>
+                            <label class="chip">
+                                <input type="checkbox" name="interests" value="it">
+                                <span>Технологии</span>
+                            </label>
+                            <label class="chip">
+                                <input type="checkbox" name="interests" value="art">
+                                <span>Искусство</span>
+                            </label>
+                            <label class="chip">
+                                <input type="checkbox" name="interests" value="pets">
+                                <span>Животные</span>
+                            </label>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="interestsExtra">Дополнительно</label>
+                            <textarea id="interestsExtra" name="interestsExtra" rows="3"
+                                placeholder="Например: настольные игры, волонтёрство, йога…"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Фото профиля -->
+                    <div class="block">
+                        <div class="block-header">
+                            <h2>Фото профиля</h2>
+                            <p>Люди чаще отвечают анкетам с открытым и понятным фото.</p>
+                        </div>
+
+                        <div class="photo-upload">
+                            <div class="photo-preview">
+                                <span class="photo-initials">Вы</span>
+                            </div>
+                            <div class="photo-upload-body">
+                                <label class="ghost-btn">
+                                    <input type="file" name="avatar" accept="image/*">
+                                    <span>Загрузить фото</span>
+                                </label>
+                                <p class="helper">
+                                    Формат JPG, PNG или HEIC, до 10 МБ.
+                                    Для безопасности не выкладывайте документы и чужие фото.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Геолокация -->
+                    <div class="block">
+                        <div class="block-header">
+                            <h2>Город и область поиска</h2>
+                            <p>Мы показываем анкеты людей поблизости. Город можно изменить в любой момент.</p>
+                        </div>
+
+                        <div class="geo-block">
+                            <button class="ghost-btn ghost-btn--icon" type="button" id="detectLocation">
+                                <span>📍</span>
+                                <span>Определить автоматически</span>
+                            </button>
+
+                            <div class="form-row">
+                                <label for="city">Город / регион</label>
+                                <input type="text" id="city" name="city" placeholder="Например, Санкт-Петербург">
+                            </div>
+
+                            <p class="helper">
+                                Мы не показываем точный адрес — только город или область.
+                                Паспортные данные и адрес регистрации, полученные через Госуслуги,
+                                никогда не видны другим пользователям.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Управление шагом -->
+                    <div class="step-actions">
+                        <a href="login.html" class="ghost-link">Выйти из профиля</a>
+                        <button class="primary-btn" type="button" onclick="window.location.href='my-profile.html'">
+                            Сохранить и перейти к моему профилю
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Правая часть: визуал -->
+            <section class="hero-visual" aria-hidden="true">
+                <div class="visual-card">
+                    <div class="visual-path">
+                        <!-- можно заменить на <img src="SvgjsG1008.svg" class="visual-path-img"> -->
+                        <svg viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 230 C 100 210, 90 140, 150 140 C 220 140, 210 70, 280 60 C 340 50, 360 30, 380 20"
+                                stroke="#f97383" stroke-width="2.2" stroke-dasharray="6 8" stroke-linecap="round" />
+                        </svg>
+                    </div>
+
+                    <div class="avatar avatar-1"></div>
+                    <div class="avatar avatar-2"></div>
+                    <div class="avatar avatar-3"></div>
+
+                    <div class="visual-caption">
+                        <span class="status-dot"></span>
+                        Чем точнее вы настроите профиль, тем лучше будут совпадения
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>© 2025 Гос знакомства</span>
+            <span>
+                <a href="privacy.html">Политика конфиденциальности</a> ·
+                <a href="terms.html">Пользовательское соглашение</a>
+            </span>
+        </footer>
+    </div>
+
+    <!-- Здесь позже можно подключить JS для геолокации -->
+    <!-- <script src="location.js"></script> -->
+</body>
+
+</html>

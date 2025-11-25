@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Гос знакомства — Настройки аккаунта</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page page--settings">
+        <header class="header header--main">
+            <div class="logo-wrap">
+                <!-- если используешь svg-логотип, можно заменить на <img src="Group 4.svg" class="logo-img"> -->
+                <div class="logo-heart" aria-hidden="true"></div>
+                <div class="logo-text" aria-label="Гос знакомства">
+                    <span>гос</span>
+                    <span>знакомства</span>
+                </div>
+            </div>
+
+            <nav class="top-nav">
+                <a href="search.html" class="top-nav-link">Подбор анкет</a>
+                <a href="chats.html" class="top-nav-link">Диалоги</a>
+                <a href="my-profile.html" class="top-nav-link">Мой профиль</a>
+                <a href="meeting-place.html" class="top-nav-link ">Место встречи</a>
+                <a href="safety.html" class="top-nav-link ">Безопасность</a>
+                <a href="settings.html" class="top-nav-link is-active">Настройки</a>
+            </nav>
+
+            <div class="user-mini">
+                <div class="user-mini-info">
+                    <span class="user-mini-name">Алексей</span>
+                    <span class="user-mini-city">Москва · 29</span>
+                </div>
+                <div class="user-mini-avatar">
+                    <span>A</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="settings-main">
+            <section class="settings-layout" aria-label="Настройки аккаунта">
+                <!-- Левое меню -->
+                <aside class="settings-sidebar">
+                    <h1 class="settings-title">Настройки</h1>
+                    <p classacing="settings-subtitle">
+                        Управляйте аккаунтом, безопасностью и уведомлениями.
+                    </p>
+
+                    <nav class="settings-nav" aria-label="Разделы настроек">
+                        <button class="settings-nav-item is-active" type="button" data-settings-tab="account">
+                            Аккаунт
+                        </button>
+                        <button class="settings-nav-item" type="button" data-settings-tab="security">
+                            Безопасность
+                        </button>
+                        <button class="settings-nav-item" type="button" data-settings-tab="notifications">
+                            Уведомления
+                        </button>
+                        <button class="settings-nav-item" type="button" data-settings-tab="privacy">
+                            Приватность
+                        </button>
+                        <button class="settings-nav-item" type="button" data-settings-tab="about">
+                            О сервисе
+                        </button>
+                    </nav>
+                </aside>
+
+                <!-- Правая часть: контент настроек -->
+                <section class="settings-content">
+                    <!-- Вкладка: Аккаунт -->
+                    <div class="settings-panel is-active" data-settings-panel="account">
+                        <div class="profile-section">
+                            <h2>Данные аккаунта</h2>
+                            <div class="settings-fields">
+                                <div class="settings-field">
+                                    <span class="settings-label">Email</span>
+                                    <span class="settings-value">user@mail.ru</span>
+                                    <button class="ghost-link settings-inline-btn" type="button">
+                                        Изменить
+                                    </button>
+                                </div>
+                                <div class="settings-field">
+                                    <span class="settings-label">Номер телефона</span>
+                                    <span class="settings-value">+7 (900) 123-45-67</span>
+                                    <button class="ghost-link settings-inline-btn" type="button">
+                                        Изменить
+                                    </button>
+                                </div>
+                                <div class="settings-field">
+                                    <span class="settings-label">Способ входа</span>
+                                    <span class="settings-value">По номеру телефона</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-section">
+                            <h2>Пароль и доступ</h2>
+                            <p class="profile-text profile-text--sm">
+                                Вы можете установить пароль, чтобы входить не только по коду из SMS.
+                            </p>
+                            <button class="ghost-btn" type="button">
+                                Установить или изменить пароль
+                            </button>
+                        </div>
+
+                        <div class="profile-section">
+                            <h2>Сессии и устройства</h2>
+                            <p class="profile-text profile-text--sm">
+                                Если вы вошли на чужом устройстве, вы можете выйти из всех сессий.
+                            </p>
+                            <button class="ghost-btn" type="button">
+                                Выйти из всех устройств
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка: Безопасность -->
+                    <div class="settings-panel" data-settings-panel="security">
+                        <div class="profile-section">
+                            <h2>Защита аккаунта</h2>
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Запрашивать код при входе с нового устройства
+                                </span>
+                            </label>
+
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Уведомлять о входе с нового устройства
+                                </span>
+                            </label>
+
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Уведомлять об изменении анкеты
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="profile-section">
+                            <h2>Чёрный список</h2>
+                            <p class="profile-text profile-text--sm">
+                                Пользователи из чёрного списка не смогут писать вам и видеть ваш профиль.
+                            </p>
+                            <button class="ghost-btn" type="button">
+                                Открыть чёрный список
+                            </button>
+                        </div>
+
+                        <div class="profile-section">
+                            <h2>Удаление аккаунта</h2>
+                            <p class="profile-text profile-text--sm">
+                                Вы можете временно скрыть профиль или полностью удалить аккаунт.
+                                Это действие необратимо.
+                            </p>
+                            <button class="ghost-link settings-danger" type="button">
+                                Удалить аккаунт…
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка: Уведомления -->
+                    <div class="settings-panel" data-settings-panel="notifications">
+                        <div class="profile-section">
+                            <h2>Уведомления в приложении</h2>
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Новые сообщения
+                                </span>
+                            </label>
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Новые совпадения
+                                </span>
+                            </label>
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Подбор новых анкет
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="profile-section">
+                            <h2>Email-уведомления</h2>
+                            <p class="profile-text profile-text--sm">
+                                Мы стараемся не писать лишнего и отправлять только важные письма.
+                            </p>
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Важные события (новые совпадения, вход с нового устройства)
+                                </span>
+                            </label>
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Редкие новости и обновления сервиса
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка: Приватность -->
+                    <div class="settings-panel" data-settings-panel="privacy">
+                        <div class="profile-section">
+                            <h2>Кто может видеть меня</h2>
+                            <div class="settings-fields">
+                                <div class="settings-field">
+                                    <span class="settings-label">В подборе анкет</span>
+                                    <span class="settings-value">Все пользователи подходящего возраста</span>
+                                </div>
+                                <div class="settings-field">
+                                    <span class="settings-label">По ссылке на профиль</span>
+                                    <span class="settings-value">Только зарегистрированные пользователи</span>
+                                </div>
+                            </div>
+
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Показывать статус «Онлайн»
+                                </span>
+                            </label>
+
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Показывать расстояние до других пользователей
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="profile-section">
+                            <h2>Данные и персонализация</h2>
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Использовать интересы для подбора анкет
+                                </span>
+                            </label>
+                            <label class="toggle">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                                <span class="toggle-label">
+                                    Учитывать местоположение при подборе
+                                </span>
+                            </label>
+                            <button class="ghost-btn" type="button">
+                                Скачать копию данных
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка: О сервисе -->
+                    <div class="settings-panel" data-settings-panel="about">
+                        <div class="profile-section">
+                            <h2>О сервисе «Гос знакомства»</h2>
+                            <p class="profile-text">
+                                «Гос знакомства» — сервис безопасных знакомств с проверкой профилей,
+                                созданный для людей, которые ценят честность, уважение и безопасность.
+                            </p>
+                        </div>
+
+                        <div class="profile-section">
+                            <h2>Версия приложения</h2>
+                            <div class="settings-fields">
+                                <div class="settings-field">
+                                    <span class="settings-label">Версия</span>
+                                    <span class="settings-value">1.0.0</span>
+                                </div>
+                                <div class="settings-field">
+                                    <span class="settings-label">Сборка</span>
+                                    <span class="settings-value">web-prototype</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-section">
+                            <h2>Поддержка</h2>
+                            <p class="profile-text profile-text--sm">
+                                Если вы столкнулись с проблемой или хотите отправить отзыв, вы можете
+                                написать в службу поддержки.
+                            </p>
+                            <button class="ghost-btn" type="button">
+                                Написать в поддержку
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="footer footer--main">
+            <span>© 2025 Гос знакомства</span>
+            <span>
+                <a href="#">Помощь</a> ·
+                <a href="#">Настройки конфиденциальности</a> ·
+                <a href="#">Выход</a>
+            </span>
+        </footer>
+    </div>
+
+    <script>
+        // Простое переключение вкладок настроек
+        (function () {
+            const navItems = Array.from(document.querySelectorAll('.settings-nav-item'));
+            const panels = Array.from(document.querySelectorAll('.settings-panel'));
+
+            navItems.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const tab = btn.getAttribute('data-settings-tab');
+
+                    navItems.forEach((b) => b.classList.remove('is-active'));
+                    panels.forEach((p) => p.classList.remove('is-active'));
+
+                    btn.classList.add('is-active');
+                    const panel = panels.find((p) => p.getAttribute('data-settings-panel') === tab);
+                    if (panel) panel.classList.add('is-active');
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>

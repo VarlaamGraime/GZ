@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Гос знакомства — Жалоба на пользователя</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page page--report">
+    <header class="header header--main">
+      <div class="logo-wrap">
+        <div class="logo-heart" aria-hidden="true"></div>
+        <div class="logo-text" aria-label="Гос знакомства">
+          <span>гос</span>
+          <span>знакомства</span>
+        </div>
+      </div>
+
+      <nav class="top-nav">
+        <a href="search.html" class="top-nav-link">Подбор анкет</a>
+        <a href="chats.html" class="top-nav-link">Диалоги</a>
+        <a href="my-profile.html" class="top-nav-link">Мой профиль</a>
+        <a href="settings.html" class="top-nav-link">Настройки</a>
+      </nav>
+
+      <div class="user-mini">
+        <div class="user-mini-info">
+          <span class="user-mini-name">Алексей</span>
+          <span class="user-mini-city">Москва · 29</span>
+        </div>
+        <div class="user-mini-avatar">
+          <span>A</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="report-main">
+      <section class="report-card" aria-label="Форма жалобы">
+        <header class="report-header">
+          <div class="report-back">
+            <button class="ghost-link" type="button" onclick="history.back()">
+              ← Назад
+            </button>
+          </div>
+
+          <div class="report-user">
+            <div class="report-user-avatar">
+              <span>О</span>
+            </div>
+            <div class="report-user-info">
+              <span class="report-user-name">Жалоба на профиль: Ольга, 27</span>
+              <span class="report-user-meta">Профиль из подборки рядом с вами</span>
+            </div>
+          </div>
+        </header>
+
+        <form class="report-form">
+          <!-- Причина жалобы -->
+          <section class="report-section">
+            <h2>Причина жалобы</h2>
+            <p class="report-help">
+              Пожалуйста, выберите один основной вариант. При необходимости подробнее опишите ситуацию ниже.
+            </p>
+
+            <div class="report-reasons">
+              <label class="report-radio">
+                <input type="radio" name="reason" value="fake" checked>
+                <span>Фейковый профиль / выдаёт себя за другого человека</span>
+              </label>
+
+              <label class="report-radio">
+                <input type="radio" name="reason" value="harassment">
+                <span>Оскорбления, агрессия, преследование</span>
+              </label>
+
+              <label class="report-radio">
+                <input type="radio" name="reason" value="fraud">
+                <span>Попытка выманить деньги или данные (мошенничество)</span>
+              </label>
+
+              <label class="report-radio">
+                <input type="radio" name="reason" value="nsfw">
+                <span>Неприемлемый контент (18+, насилие, угрозы)</span>
+              </label>
+
+              <label class="report-radio">
+                <input type="radio" name="reason" value="other">
+                <span>Другое</span>
+              </label>
+            </div>
+          </section>
+
+          <!-- Описание -->
+          <section class="report-section">
+            <h2>Опишите, что произошло</h2>
+            <p class="report-help">
+              Вы можете приложить примеры сообщений или описать, что вас насторожило. 
+              Пожалуйста, не вставляйте сюда пароли и личные данные.
+            </p>
+
+            <textarea
+              class="report-textarea"
+              name="details"
+              rows="5"
+              placeholder="Например: пользователь просил перевести деньги, писал агрессивные сообщения, отправлял неприемлемый контент и т.д."></textarea>
+          </section>
+
+          <!-- Дополнительно -->
+          <section class="report-section report-section--extra">
+            <h2>Дополнительно</h2>
+
+            <label class="toggle">
+              <input type="checkbox" checked>
+              <span class="toggle-slider"></span>
+              <span class="toggle-label">
+                Заблокировать этого пользователя (он не сможет писать вам и видеть ваш профиль)
+              </span>
+            </label>
+
+            <label class="toggle">
+              <input type="checkbox">
+              <span class="toggle-slider"></span>
+              <span class="toggle-label">
+                Отправить в поддержку копию последних сообщений
+              </span>
+            </label>
+
+            <p class="report-help">
+              Мы рассмотрим жалобу, а при необходимости можем связаться с вами через раздел «Поддержка».
+            </p>
+          </section>
+
+          <!-- Кнопки -->
+          <div class="report-actions">
+            <button
+              class="ghost-btn ghost-btn--full"
+              type="button"
+              onclick="history.back()">
+              Отменить
+            </button>
+
+            <button
+              class="primary-btn primary-btn--full report-submit"
+              type="submit">
+              Отправить жалобу
+            </button>
+          </div>
+
+          <p class="report-note">
+            Отправляя жалобу, вы помогаете сделать сервис безопаснее для всех. 
+            Ложные жалобы могут привести к ограничениям аккаунта.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer footer--main">
+      <span>© 2025 Гос знакомства</span>
+      <span>
+        <a href="safety.html">Безопасность общения</a> ·
+        <a href="#">Помощь</a> ·
+        <a href="#">Выход</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>

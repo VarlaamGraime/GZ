@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Гос знакомства — Поиск людей</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page page--discover">
+        <header class="header header--main">
+            <div class="logo-wrap">
+                <!-- если используешь svg-логотип, замени на <img src="Group 4.svg" class="logo-img"> -->
+                <div class="logo-heart" aria-hidden="true"></div>
+                <div class="logo-text" aria-label="Гос знакомства">
+                    <span>гос</span>
+                    <span>знакомства</span>
+                </div>
+            </div>
+
+            <nav class="top-nav">
+                <a href="search.html" class="top-nav-link is-active">Подбор анкет</a>
+                <a href="chats.html" class="top-nav-link">Диалоги</a>
+                <a href="my-profile.html" class="top-nav-link">Мой профиль</a>
+                <a href="meeting-place.html" class="top-nav-link ">Место встречи</a>
+                <a href="safety.html" class="top-nav-link">Безопасность</a>
+            </nav>
+
+            <div class="user-mini">
+                <div class="user-mini-info">
+                    <span class="user-mini-name">Алексей</span>
+                    <span class="user-mini-city">Москва · 29</span>
+                </div>
+                <div class="user-mini-avatar">
+                    <span>A</span>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="discover-main">
+            <section class="discover-top">
+                <div class="discover-text">
+                    <div class="discover-helper">
+                        Режим подбора · Листайте анкеты и ставьте лайки
+                    </div>
+                    <h1>Подбор людей рядом</h1>
+                    <p>
+                        Оценивайте анкеты по одной. Нажмите <strong>сердце</strong>, если человек вам нравится,
+                        или <strong>крестик</strong>, если хотите пропустить.
+                    </p>
+                </div>
+
+                <form class="discover-filters" aria-label="Фильтры подбора">
+                    <label class="discover-filter">
+                        <span class="discover-filter-label">Формат знакомства</span>
+                        <select class="discover-filter-select" name="mode">
+                            <option value="swipe" selected>Листать профили</option>
+                            <option value="meeting">Место встречи</option>
+                            <option value="by_interests">По интересам</option>
+                            <option value="no_meet">Невстреча</option>
+                            <option value="anonymous_chat">Анонимный чат</option>
+                            <option value="find_me">“Найди меня”</option>
+                            <option value="events">Совместные мероприятия</option>
+                            <option value="help_choose">Помоги выбрать</option>
+                        </select>
+                    </label>
+
+                    <label class="discover-filter">
+                        <span class="discover-filter-label">Показать</span>
+                        <select class="discover-filter-select" name="extraFilter">
+                            <option value="all" selected>Всех</option>
+                            <option value="near">Только рядом (до 5 км)</option>
+                            <option value="online">Онлайн сейчас</option>
+                            <option value="new">Новые анкеты</option>
+                        </select>
+                    </label>
+                </form>
+            </section>
+
+
+            <section class="discover-center" aria-label="Анкета">
+                <!-- кнопка "дизлайк" слева -->
+                <button class="round-action round-action--skip" type="button" id="btnSkip"
+                    aria-label="Пропустить анкету">
+                    ✕
+                </button>
+
+                <!-- стек анкет -->
+                <div class="discover-stack">
+                    <!-- Анкета 1 -->
+                    <article class="discover-card is-active" data-index="0" data-profile-url="profile.html">
+                        <div class="discover-photo">
+                            <div class="discover-photo-avatar avatar avatar-1"></div>
+                        </div>
+                        <div class="discover-body">
+                            <div class="discover-header">
+                                <h2>Ольга, 27</h2>
+                                <span class="profile-badge">Онлайн</span>
+                            </div>
+                            <p class="discover-location">Санкт-Петербург · 3 км от вас</p>
+                            <p class="discover-about">
+                                Люблю прогулки у воды, кофе и долгие разговоры. Ищу человека, с которым будет спокойно.
+                            </p>
+                            <div class="discover-tags">
+                                <span>#путешествия</span>
+                                <span>#книги</span>
+                                <span>#кофе</span>
+                            </div>
+                            <button class="discover-open-profile" type="button">
+                                Открыть профиль
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- Анкета 2 -->
+                    <article class="discover-card" data-index="1">
+                        <div class="discover-photo">
+                            <div class="discover-photo-avatar avatar avatar-2"></div>
+                        </div>
+                        <div class="discover-body">
+                            <div class="discover-header">
+                                <h2>Алиса, 31</h2>
+                                <span class="profile-status-dot">Недавно онлайн</span>
+                            </div>
+                            <p class="discover-location">Москва · 1,2 км от вас</p>
+                            <p class="discover-about">
+                                Бег, настолки, стендап и иногда гитара. Готов обсудить всё: от фильмов Нолана до
+                                завтрака.
+                            </p>
+                            <div class="discover-tags">
+                                <span>#спорт</span>
+                                <span>#юмор</span>
+                                <span>#настолки</span>
+                            </div>
+                            <button class="discover-open-profile" type="button" data-profile-url="profile.html">
+                                Открыть профиль
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Анкета 3 -->
+                    <article class="discover-card" data-index="2">
+                        <div class="discover-photo">
+                            <div class="discover-photo-avatar avatar avatar-3"></div>
+                        </div>
+                        <div class="discover-body">
+                            <div class="discover-header">
+                                <h2>Сергей, 24</h2>
+                                <span class="profile-status-dot">Новая анкета</span>
+                            </div>
+                            <p class="discover-location">Казань · 10 км от вас</p>
+                            <p class="discover-about">
+                                Работаю в IT, люблю уют, котов и хорошую кухню. Ищу человека, с которым можно расти
+                                вместе.
+                            </p>
+                            <div class="discover-tags">
+                                <span>#it</span>
+                                <span>#котики</span>
+                                <span>#готовка</span>
+                            </div>
+                            <button class="discover-open-profile" type="button" data-profile-url="profile.html">
+                                Открыть профиль
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Заглушка, когда анкеты кончились -->
+                    <article class="discover-card discover-card--empty" data-index="3">
+                        <div class="discover-body discover-body--center">
+                            <h2>Анкеты закончились</h2>
+                            <p class="discover-about">
+                                Мы показали всех, кто подходит под текущие фильтры.
+                                Попробуйте <strong>расширить поиск</strong> или зайдите чуть позже.
+                            </p>
+                            <button class="primary-btn" type="button">
+                                Обновить подбор
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- кнопка "лайк" справа -->
+                <button class="round-action round-action--like" type="button" id="btnLike" aria-label="Поставить лайк">
+                    ❤
+                </button>
+            </section>
+
+            <section class="discover-bottom">
+                <p class="discover-counter">
+                    Анкета <span id="cardNumber">1</span> из <span id="cardTotal">3</span>
+                </p>
+            </section>
+        </main>
+
+        <footer class="footer footer--main">
+            <span>© 2025 Гос знакомства</span>
+            <span>
+                <a href="#">Помощь</a> ·
+                <a href="#">Настройки конфиденциальности</a> ·
+                <a href="#">Выход</a>
+            </span>
+        </footer>
+    </div>
+
+    <script>
+        (function () {
+            const cards = Array.from(document.querySelectorAll('.discover-card'));
+            const btnSkip = document.getElementById('btnSkip');
+            const btnLike = document.getElementById('btnLike');
+            const numberEl = document.getElementById('cardNumber');
+            const totalEl = document.getElementById('cardTotal');
+
+            const lastRealIndex = cards.length - 2; // последняя «живая» анкета (до заглушки)
+            totalEl.textContent = lastRealIndex + 1;
+
+            let current = 0;
+
+            function setActive(index) {
+                cards.forEach(card => card.classList.remove('is-active', 'is-prev'));
+                const prev = cards[current];
+                const next = cards[index];
+
+                if (prev) prev.classList.add('is-prev');
+                if (next) next.classList.add('is-active');
+
+                current = index;
+
+                if (index <= lastRealIndex) {
+                    numberEl.textContent = index + 1;
+                } else {
+                    numberEl.textContent = lastRealIndex + 1;
+                }
+            }
+
+            function nextCard() {
+                const nextIndex = Math.min(current + 1, cards.length - 1);
+                setActive(nextIndex);
+            }
+
+            btnSkip.addEventListener('click', nextCard);
+            btnLike.addEventListener('click', nextCard);
+
+            // стрелки на клавиатуре ← / →
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                    nextCard();
+                }
+            });
+        })();
+
+    </script>
+    <script>
+        (function () {
+            const cards = Array.from(document.querySelectorAll('.discover-card'));
+            const btnSkip = document.getElementById('btnSkip');
+            const btnLike = document.getElementById('btnLike');
+            const numberEl = document.getElementById('cardNumber');
+            const totalEl = document.getElementById('cardTotal');
+
+            if (!cards.length || !numberEl || !totalEl) {
+                return;
+            }
+
+            // последняя «живая» анкета (до заглушки "Анкеты закончились")
+            const lastRealIndex = cards.length - 2;
+            totalEl.textContent = lastRealIndex + 1;
+
+            let current = 0;
+
+            function setActive(index) {
+                cards.forEach((card) => card.classList.remove('is-active', 'is-prev'));
+
+                const prev = cards[current];
+                const next = cards[index];
+
+                if (prev) prev.classList.add('is-prev');
+                if (next) next.classList.add('is-active');
+
+                current = index;
+
+                if (index <= lastRealIndex) {
+                    numberEl.textContent = index + 1;
+                } else {
+                    numberEl.textContent = lastRealIndex + 1;
+                }
+            }
+
+            function nextCard() {
+                const nextIndex = Math.min(current + 1, cards.length - 1);
+                setActive(nextIndex);
+            }
+
+            if (btnSkip) {
+                btnSkip.addEventListener('click', nextCard);
+            }
+
+            if (btnLike) {
+                btnLike.addEventListener('click', nextCard);
+            }
+
+            // стрелки на клавиатуре ← / →
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                    nextCard();
+                }
+            });
+
+            // Открытие профиля из карточки
+            cards.forEach((card) => {
+                const openBtn = card.querySelector('.discover-open-profile');
+                if (!openBtn) return;
+
+                openBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const url = card.getAttribute('data-profile-url') || 'profile.html';
+                    window.location.href = url;
+                });
+            });
+        })();
+
+    </script>
+
+    <script>
+        (function () {
+            const cards = Array.from(document.querySelectorAll('.discover-card'));
+            const btnSkip = document.getElementById('btnSkip');
+            const btnLike = document.getElementById('btnLike');
+            const numberEl = document.getElementById('cardNumber');
+            const totalEl = document.getElementById('cardTotal');
+
+            if (!cards.length || !numberEl || !totalEl) {
+                return;
+            }
+
+            // последняя «живая» анкета (до заглушки "Анкеты закончились")
+            const lastRealIndex = cards.length - 2;
+            totalEl.textContent = lastRealIndex + 1;
+
+            let current = 0;
+
+            function setActive(index) {
+                cards.forEach((card) => card.classList.remove('is-active', 'is-prev'));
+
+                const prev = cards[current];
+                const next = cards[index];
+
+                if (prev) prev.classList.add('is-prev');
+                if (next) next.classList.add('is-active');
+
+                current = index;
+
+                if (index <= lastRealIndex) {
+                    numberEl.textContent = index + 1;
+                } else {
+                    numberEl.textContent = lastRealIndex + 1;
+                }
+            }
+
+            function nextCard() {
+                const nextIndex = Math.min(current + 1, cards.length - 1);
+                setActive(nextIndex);
+            }
+
+            // обработчик лайка с матчем после 2-й карточки (index = 1)
+            function handleLike() {
+                if (current === 0) {
+                    window.location.href = 'match.html';
+                    return;
+                }
+                nextCard();
+            }
+
+            if (btnSkip) {
+                btnSkip.addEventListener('click', nextCard);
+            }
+
+            if (btnLike) {
+                btnLike.addEventListener('click', handleLike);
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    nextCard();
+                } else if (e.key === 'ArrowRight') {
+                    handleLike();
+                }
+            });
+
+            // Открытие профиля из карточки
+            cards.forEach((card) => {
+                const openBtn = card.querySelector('.discover-open-profile');
+                if (!openBtn) return;
+
+                openBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const url = card.getAttribute('data-profile-url') || 'profile.html';
+                    window.location.href = url;
+                });
+            });
+        })();
+
+    </script>
+</body>
+
+</html>

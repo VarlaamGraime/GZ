@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Гос знакомства — Диалоги</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page page--chats">
+        <header class="header header--main">
+            <div class="logo-wrap">
+                <!-- если используешь svg-логотип, можно поменять на <img src="Group 4.svg" class="logo-img"> -->
+                <div class="logo-heart" aria-hidden="true"></div>
+                <div class="logo-text" aria-label="Гос знакомства">
+                    <span>гос</span>
+                    <span>знакомства</span>
+                </div>
+            </div>
+
+            <nav class="top-nav">
+                <a href="search.html" class="top-nav-link">Подбор анкет</a>
+                <a href="chats.html" class="top-nav-link  is-active">Диалоги</a>
+                <a href="my-profile.html" class="top-nav-link">Мой профиль</a>
+                <a href="meeting-place.html" class="top-nav-link ">Место встречи</a>
+                <a href="safety.html" class="top-nav-link">Безопасность</a>
+            </nav>
+
+
+            <div class="user-mini">
+                <div class="user-mini-info">
+                    <span class="user-mini-name">Алексей</span>
+                    <span class="user-mini-city">Москва · 29</span>
+                </div>
+                <div class="user-mini-avatar">
+                    <span>A</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="chats-main">
+            <!-- Верхняя панель поиска/фильтров -->
+            <section class="chats-header">
+                <div class="chats-header-left">
+                    <h1>Диалоги</h1>
+                    <p>Ваши переписки, совпадения и новые знакомства.</p>
+                </div>
+                <div class="chats-header-right">
+                    <button class="ghost-btn ghost-btn--small" type="button">
+                        Настройки чата
+                    </button>
+                </div>
+            </section>
+
+            <section class="chats-filters">
+                <div class="chats-search">
+                    <input type="text" class="chats-search-input" placeholder="Поиск по имени или сообщениям">
+                </div>
+
+                <div class="chats-tabs" aria-label="Фильтр диалогов">
+                    <button class="chats-tab is-active" type="button">Все</button>
+                    <button class="chats-tab" type="button">Совпадения</button>
+                    <button class="chats-tab" type="button">Непрочитанные</button>
+                </div>
+            </section>
+
+            <!-- Список диалогов -->
+            <section class="chats-list" aria-label="Список диалогов">
+                <!-- Диалог 1 -->
+                <article class="chat-item chat-item--unread">
+                    <a href="chat.html" class="chat-item-link">
+                        <div class="chat-avatar">
+                            <span>О</span>
+                            <span class="chat-status chat-status--online"></span>
+                        </div>
+                        <div class="chat-main">
+                            <div class="chat-row-top">
+                                <h2 class="chat-name">Ольга, 27</h2>
+                                <span class="chat-time">20:14</span>
+                            </div>
+                            <div class="chat-row-middle">
+                                <p class="chat-last">
+                                    Вы: Тогда увидимся в субботу у набережной? ☕
+                                </p>
+                                <span class="chat-unread-badge">3</span>
+                            </div>
+                            <div class="chat-row-bottom">
+                                <span class="chat-tag">Совпадение</span>
+                                <span class="chat-tag">Рядом · 3 км</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Диалог 2 -->
+                <article class="chat-item">
+                    <a href="chat.html" class="chat-item-link">
+                        <div class="chat-avatar chat-avatar--alt">
+                            <span>М</span>
+                        </div>
+                        <div class="chat-main">
+                            <div class="chat-row-top">
+                                <h2 class="chat-name">Михаил, 31</h2>
+                                <span class="chat-time">18:02</span>
+                            </div>
+                            <div class="chat-row-middle">
+                                <p class="chat-last">
+                                    Михаил: Если хочешь, могу показать классные места для бега в центре города.
+                                </p>
+                            </div>
+                            <div class="chat-row-bottom">
+                                <span class="chat-tag">В сети недавно</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Диалог 3 -->
+                <article class="chat-item">
+                    <a href="chat.html" class="chat-item-link">
+                        <div class="chat-avatar chat-avatar--soft">
+                            <span>Е</span>
+                        </div>
+                        <div class="chat-main">
+                            <div class="chat-row-top">
+                                <h2 class="chat-name">Елена, 24</h2>
+                                <span class="chat-time">Вчера</span>
+                            </div>
+                            <div class="chat-row-middle">
+                                <p class="chat-last">
+                                    Вы: Давай начнём с кофе, а дальше как пойдёт 🙂
+                                </p>
+                            </div>
+                            <div class="chat-row-bottom">
+                                <span class="chat-tag">Избранное</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Диалог 4 (пустой пример) -->
+                <article class="chat-item chat-item--muted">
+                    <a href="chat.html" class="chat-item-link">
+                        <div class="chat-avatar">
+                            <span>В</span>
+                        </div>
+                        <div class="chat-main">
+                            <div class="chat-row-top">
+                                <h2 class="chat-name">Виктор, 34</h2>
+                                <span class="chat-time">3 дня назад</span>
+                            </div>
+                            <div class="chat-row-middle">
+                                <p class="chat-last">
+                                    Виктор: Напиши, если будешь в центре, можно пересечься после работы.
+                                </p>
+                                <span class="chat-muted">Уведомления выключены</span>
+                            </div>
+                            <div class="chat-row-bottom">
+                                <span class="chat-tag">Совпадение</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer footer--main">
+            <span>© 2025 Гос знакомства</span>
+            <span>
+                <a href="#">Помощь</a> ·
+                <a href="#">Настройки конфиденциальности</a> ·
+                <a href="#">Выход</a>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>

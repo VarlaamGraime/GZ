@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Гос знакомства — Профиль пользователя</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page page--profile">
+    <header class="header header--main">
+      <div class="logo-wrap">
+        <!-- если используешь svg-логотип, можешь заменить на <img src="Group 4.svg" class="logo-img"> -->
+        <div class="logo-heart" aria-hidden="true"></div>
+        <div class="logo-text" aria-label="Гос знакомства">
+          <span>гос</span>
+          <span>знакомства</span>
+        </div>
+      </div>
+
+      <div class="header-helper">
+        <a href="my-profile.html" class="ghost-link">← Назад в мой профиль</a>
+      </div>
+
+      <div class="user-mini">
+        <div class="user-mini-info">
+          <span class="user-mini-name">Алексей</span>
+          <span class="user-mini-city">Москва · 29</span>
+        </div>
+        <div class="user-mini-avatar">
+          <span>A</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="profile-main">
+      <section class="profile-layout" aria-label="Мой профиль (как видят другие)">
+        <!-- Левая часть: фото -->
+        <div class="profile-photos">
+          <div class="profile-photo-main profile-photo-main--me">
+            <div class="myprofile-avatar-circle">
+              <!-- здесь можно будет подставить реальное фото -->
+              <span>A</span>
+            </div>
+          </div>
+
+          <div class="profile-photo-thumbs">
+            <button class="profile-thumb is-active" type="button">
+              <span>1</span>
+            </button>
+            <button class="profile-thumb" type="button">
+              <span>2</span>
+            </button>
+            <button class="profile-thumb" type="button">
+              <span>3</span>
+            </button>
+          </div>
+
+          <p class="profile-photo-note">
+            Так ваши фотографии будут показаны другим пользователям, которые соответствуют вашим настройкам приватности.
+          </p>
+        </div>
+
+        <!-- Правая часть: информация -->
+        <div class="profile-info">
+          <header class="profile-info-header">
+            <div>
+              <h1>Алексей, 29</h1>
+              <p class="profile-location">
+                Москва · в радиусе 15 км · <span class="profile-status-dot">В сети недавно</span>
+              </p>
+            </div>
+            <div class="profile-header-actions">
+              <!-- В реальном просмотре здесь была бы кнопка "Пожаловаться" для других пользователей -->
+              <button class="ghost-btn ghost-btn--icon-only" type="button" title="Профиль подтверждён через Госуслуги">
+                ✔
+              </button>
+            </div>
+          </header>
+
+          <div class="profile-section">
+            <h2>О себе</h2>
+            <p class="profile-text">
+              Работаю в IT, люблю настольные игры, прогулки и хорошее кофе. Ищу человека,
+              с которым можно будет и молчать, и обсуждать всё на свете — от мемов до больших планов.
+            </p>
+          </div>
+
+          <div class="profile-section">
+            <h2>Интересы</h2>
+            <div class="profile-tags">
+              <span>#it</span>
+              <span>#настолки</span>
+              <span>#спорт</span>
+              <span>#кино</span>
+              <span>#путешествия</span>
+              <span>#кофе</span>
+            </div>
+          </div>
+
+          <div class="profile-section profile-section--grid">
+            <div>
+              <h3>Формат общения</h3>
+              <p class="profile-text profile-text--sm">
+                Серьёзные отношения и живое общение. Важно чувство юмора и возможность быть собой.
+              </p>
+            </div>
+            <div>
+              <h3>Кого ищет</h3>
+              <p class="profile-text profile-text--sm">
+                Партнёра для серьёзных отношений, с похожими ценностями, интересом к развитию 
+                и готовностью делить и спокойные вечера, и большие планы.
+              </p>
+            </div>
+          </div>
+
+          <div class="profile-section profile-section--grid">
+            <div>
+              <h3>Город</h3>
+              <p class="profile-text profile-text--sm">
+                Москва, показываем в радиусе 15 км. Возможны встречи в центре и в удобных для обоих районах.
+              </p>
+            </div>
+            <div>
+              <h3>Безопасность</h3>
+              <p class="profile-text profile-text--sm">
+                Профиль подтверждён через Госуслуги. Номер телефона и другие персональные данные 
+                не показываются другим пользователям.
+              </p>
+            </div>
+          </div>
+
+          <div class="profile-section">
+            <p class="profile-text profile-text--sm">
+              Так ваш профиль видят другие пользователи сервиса. 
+              Изменить фото, интересы и описание можно в разделе «Мой профиль».
+            </p>
+          </div>
+
+          <div class="profile-actions-bar">
+            <span class="profile-text profile-text--sm">
+              Панель действий (лайк, сообщение, пропуск) для вас скрыта, 
+              так как вы просматриваете свой профиль в режиме предпросмотра.
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer--main">
+      <span>© 2025 Гос знакомства</span>
+      <span>
+        <a href="safety.html">Безопасность общения</a> ·
+        <a href="settings.html">Настройки конфиденциальности</a> ·
+        <a href="login.html">Выход</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>
