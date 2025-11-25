@@ -278,19 +278,19 @@
      .avatar-1 {
          top: 6%;
          left: 6%;
-         background-image: url("https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400");
+         background-image: url("./assets/pexels-photo-733872.jpeg");
      }
 
      .avatar-2 {
          top: 8%;
          right: 4%;
-         background-image: url("https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=400");
+         background-image: url("./assets/pexels-photo-1130626.jpeg");
      }
 
      .avatar-3 {
          top: 8%;
          left: 34%;
-         background-image: url("https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400");
+         background-image: url("./assets/pexels-photo-614810.jpeg");
      }
 
      .visual-caption {
